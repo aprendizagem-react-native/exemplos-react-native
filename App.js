@@ -1,20 +1,30 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import React, { useState } from 'react';
+import { View } from 'react-native';
 
-export default function App() {
-  return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
-  );
-}
+import Calculadora from './apps/Calculadora';
+import Estilos from './apps/Estilos';
+import Pokemon from './apps/Pokemon';
+import Imagens from './apps/Imagens';
+import RolagemVertical from './apps/RolagemVertical';
+import Listagem from './apps/Listagem';
+import Login from './apps/Login';
+import Contador from './apps/Contador';
+import Padrao from './apps/Padrao';
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
+const App = () => {
+    return (
+        <View>
+            {/* <Padrao />    */}
+            {/* <Contador /> */}
+            {/* <Login /> */}
+            {/* <Listagem /> */}
+            {/* <RolagemVertical /> */}
+            {/* <Imagens /> */}
+            {/* <Pokemon /> */}
+            {/* <Estilos /> */}
+            <Calculadora />
+        </View>
+    );
+};
+
+export default App;
